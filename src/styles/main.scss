@@ -1,4 +1,9 @@
-*{
+@use "variaveis";
+@use "header";
+@import url('https://fonts.cdnfonts.com/css/texas-tango-personal-use');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,3 +11,19 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: variaveis.$bgColorPrimary;
+  color: variaveis.$textColorPrimary;
+  font-family: "Mulish", sans-serif;
+}
+
+@mixin title($font-size: 16px) {
+  font-family: "Texas Tango BOLD PERSONAL USE", sans-serif;
+  font-size: $font-size;
+}
+
+.title{
+  @include title(24px);
+}
+

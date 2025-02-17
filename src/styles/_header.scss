@@ -1,0 +1,42 @@
+@use 'variaveis';
+
+.header {
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  h1{
+    height: 48px;
+  }
+
+  &__img{
+    height: 48px;
+    width: 96px;
+  }
+
+  &__button{
+    display: block;
+    width: 172px;
+    height: 48px;
+    position: relative;
+    color: variaveis.$textColorPrimary;
+    overflow: hidden;
+
+    img{
+      width: 100%;
+    }
+
+    p{
+      display: block;
+      position: absolute;
+      top: .53rem;
+      left: 1.8rem;
+    }
+  }
+}
