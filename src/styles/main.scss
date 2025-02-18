@@ -1,5 +1,8 @@
+// Arquivos
 @use "variaveis";
 @use "header";
+
+// Fontes
 @import url('https://fonts.cdnfonts.com/css/texas-tango-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
@@ -16,6 +19,8 @@ body {
   background-color: variaveis.$bgColorPrimary;
   color: variaveis.$textColorPrimary;
   font-family: "Mulish", sans-serif;
+  cursor: url("../../../src/images/cursor/cursor1.png"), auto;
+  height: 800vh;
 }
 
 @mixin title($font-size: 16px) {
@@ -27,3 +32,10 @@ body {
   @include title(24px);
 }
 
+.title--medium{
+  @include title(32px);
+}
+
+a:hover{
+  cursor: url("../../../src/images/cursor/cursor1.png"), auto;
+}
