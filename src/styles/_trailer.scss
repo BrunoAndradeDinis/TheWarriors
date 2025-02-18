@@ -3,6 +3,7 @@
 .trailer {
   padding: 1rem 2rem;
   height: 100vh;
+  margin-top: 2rem;
 
   h2 {
     color: variaveis.$textColorSecondary;
@@ -10,22 +11,22 @@
     margin-top: 3rem;
   }
 
-  &__container{
+  &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2rem;
     margin-left: 2rem;
 
-    iframe{
-      border-radius: .5rem;
+    iframe {
+      border-radius: 0.5rem;
       margin: 0 auto;
       aspect-ratio: 16 / 9;
       max-height: 376px;
       height: 100%;
-      width: 600px;
+      max-width: 600px;
     }
 
-    img{
+    img {
       max-height: 376px;
       margin: 0 auto;
     }
