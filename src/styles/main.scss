@@ -3,6 +3,7 @@
 @use "header";
 @use "trailer";
 @use "synopsis";
+@use "gallery";
 
 // Fontes
 @import url('https://fonts.cdnfonts.com/css/texas-tango-personal-use');
@@ -54,3 +55,4 @@ body {
 a:hover{
   cursor: url("../../../src/images/cursor/cursor1.png"), auto;
 }
+
