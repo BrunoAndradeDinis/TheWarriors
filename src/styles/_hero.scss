@@ -1,4 +1,6 @@
-.hero{
+@use "variaveis";
+
+.hero {
   background-color: transparent;
   background-image: url("../../../src/images/hero-desktop.png");
   background-position: center;
@@ -11,10 +13,47 @@
   justify-content: center;
   align-items: center;
 
-  img{
-    max-width: 574px;
-    max-height: 287px;
-    width: 100%;
-    max-height: 100% ;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+
+    img {
+      max-width: 574px;
+      max-height: 287px;
+      width: 100%;
+      max-height: 100%;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;
+
+      li {
+        color: variaveis.$textColorSecondary;
+        padding: .5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 62px;
+        text-align: center;
+        transition: .3s ease;
+        
+        &:hover, &:hover a{
+          background-color: variaveis.$textColorSecondary;
+          color: variaveis.$textColorPrimary;
+          cursor: pointer;
+        }
+        a {
+          color: variaveis.$textColorSecondary;          
+          font-size: 32px;
+          transition: .3s ease;
+        }
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@
 @use "trailer";
 @use "synopsis";
 @use "gallery";
+@use "footer";
 
 // Fontes
 @import url('https://fonts.cdnfonts.com/css/texas-tango-personal-use');
@@ -43,15 +44,11 @@ body {
   @include title(24px);
 }
 
-.title--medium{
-  @include title(32px);
+.title--small{
+  @include title(16);
 }
 
 .title--big{
   @include title(40px);
-}
-
-a:hover{
-  cursor: url("../../../src/images/cursor/cursor1.png"), auto;
 }
 

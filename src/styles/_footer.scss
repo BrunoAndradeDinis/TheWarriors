@@ -1,0 +1,26 @@
+@use "variaveis";
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+
+  &__container{
+
+    a{
+      text-decoration: none;
+      color: variaveis.$textColorSecondary;
+      font-size: 16px;
+      transition: .3s ease;
+      display: inline-block;
+      padding: 0 .25rem;
+
+      &:hover{
+        background-color: variaveis.$textColorSecondary;
+        color: variaveis.$textColorPrimary;
+      }
+    }
+  }
+}
