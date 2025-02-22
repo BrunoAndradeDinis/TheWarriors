@@ -21,7 +21,18 @@
       padding: .25rem;
 
       &:hover{
-        background-color: variaveis.$textColorSecondary;
+        background-image: url("../../../src/images/bgBotao.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: variaveis.$textColorPrimary;
+      }
+
+      @media (max-width: 900px){
+        background-image: url("../../../src/images/bgBotao.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
         color: variaveis.$textColorPrimary;
       }
     }
