@@ -17,18 +17,29 @@
 
 <body>
   <header class="header">
-    <h1 class="header__title">
-      <a class="" href="/">
-        <img class="header__title__img" src="./src/images/logo.png" alt="The Warriors">
-      </a>
-    </h1>
+    <div class="header__container">
+      <h1 class="header__title">
+        <a class="" href="/">
+          <img class="header__container__title__img" src="./src/images/logo.png" alt="The Warriors">
+        </a>
+      </h1>
+
+      <nav class="header__container__nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#trailer">Trailer</a></li>
+          <li><a href="#synopsis">Sinopse</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
     <a href="https://play.mercadolivre.com.br/assistir/warriors-selvagens-da-noite/3f661545e2034f05968681fa2388930c" target="_blank" class="header__button">
       <img class="header__img" src="./src/images/bgBotao.png" alt="The Warriors">
       <p class="title">Assistir</p>
     </a>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero__container">
         <img src="./src/images/logo-big.png" alt="The Warriors">
         <ul class="hero__container__list">
@@ -51,7 +62,7 @@
       </div>
     </section>
 
-    <section class="trailer">
+    <section class="trailer" id="trailer">
       <h2 class="title--big">Trailer</h2>
 
       <div class="trailer__container">
@@ -61,7 +72,7 @@
       </div>
     </section>
 
-    <section class="synopsis">
+    <section class="synopsis" id="synopsis">
       <img class="synopsis__img" src="./src/images/logo-big.png" alt="The Warriors">
       <p class="synopsis__text">
         Nova York, 1979. Uma cidade pulsante, mas ainda dominada por ruas perigosas e lealdades quebradiças. No submundo das gangues, as rivalidades são decididas não só com punhos e armas, mas também por meio de traições e trapaças pelos seus territórios.
@@ -82,7 +93,7 @@
       </p>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
 
       <h2 class="title--big">Galeria</h2>
 

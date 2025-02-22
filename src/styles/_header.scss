@@ -1,6 +1,4 @@
-@use 'variaveis';
-@use 'hero';
-
+@use "variaveis";
 
 .header {
   width: 100%;
@@ -14,24 +12,44 @@
   left: 0;
   z-index: 1;
 
- &__title{
-  height: 48px;
-  display: block;
+  &__container {
+    position: relative;
+    &__title {
+      height: 48px;
+      display: block;
 
-  &__img{
-    height: 48px;
-    width: 96px;
+      &__img {
+        height: 48px;
+        width: 96px;
+      }
+    }
+
+    &__nav{
+      position: absolute;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      width: 100px;
+
+      ul{
+        background-color: rgba($color: variaveis.$bgColorPrimary, $alpha: 0.6);
+        width: 100%;
+        li{
+          padding: .5rem;
+          a{
+            color: variaveis.$textColorPrimary;
+          }
+        }
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 48px;
+      margin: -4px;
+    }
   }
 
-  a{
-    display: block;
-    width: 100%;
-    height: 48px;
-    margin: -4px;
-  }
- }
-
-  &__button{
+  &__button {
     display: block;
     width: 172px;
     height: 48px;
@@ -39,19 +57,23 @@
     color: variaveis.$textColorPrimary;
     overflow: hidden;
 
-    &:hover{
-     transform: scale(.97);
-     transition: .3s ease;
+    &:hover {
+      transform: scale(0.97);
+      transition: 0.3s ease;
     }
-    img{
+    img {
       width: 100%;
     }
 
-    p{
+    p {
       display: block;
       position: absolute;
-      top: .53rem;
+      top: 0.53rem;
       left: 1.8rem;
     }
   }
+}
+header {
+  visibility: none;
+  display: none;
 }
