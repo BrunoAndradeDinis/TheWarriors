@@ -51,7 +51,7 @@
     .slick-next:before {
       content: "";
       @include arrowContent();
-      background-image: url("../../../src/images/right-arrow.png");
+      background-image: url("../images/right-arrow.png");
       position: absolute;
       top: 0;
       margin-left: -30%;
@@ -60,7 +60,7 @@
     .slick-prev:before {
       content: "";
       @include arrowContent();
-      background-image: url("../../../src/images/left-arrow.png");
+      background-image: url("../images/left-arrow.png");
       position: absolute;
       top: 0;
       left: 0;
